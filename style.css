@@ -1,0 +1,182 @@
+/****************************************************************************
+*
+* BODY
+*
+****************************************************************************/
+body
+{
+    margin: 15px auto;
+    background-image: url("images/background.png");
+    background-repeat: repeat-x;
+}
+
+/****************************************************************************
+*
+* HEADER
+*
+****************************************************************************/
+.header
+{
+    margin-bottom: 8px;
+}
+
+.login
+{
+    margin-top: 20px;
+    color: white;
+}
+
+.login a:link, .login a:visited
+{
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+    -webkit-transition: color 0.5s;    
+    -webkit-transition: background-color 0.5s;
+    color: #FFFFFF;
+    background-color: #757575;
+    text-decoration: none;
+    border: 0.1250em solid #CCCCCC;
+    border-radius: 0.125em 0.125em 0.125em 0.125em;
+    padding: 0.1875em 0.625em 0.1875em 0.625em;
+}
+
+.login a:hover, .login a:active 
+{
+    color: black;
+    background-color: #E7E7E7;
+    text-decoration: none;
+}
+
+/****************************************************************************
+*
+* SEARCH
+*
+****************************************************************************/
+.search
+{
+    margin-bottom: 8px;
+    /*text-shadow: 0.0625em 0.0625em black;*/
+}
+
+/****************************************************************************
+*
+* MENU
+*
+****************************************************************************/
+@media screen and (max-width:1024px)
+{
+    .menu
+    {
+        background-image: url("images/bottom.jpg");
+        background-repeat: repeat-x;
+        border-radius: 0 0 0 0;
+        /*box-shadow: 0em 0.3em 0.2em 0.1em #0A0909;*/
+    }
+}
+
+.menu
+{
+    background-image: url("images/bottom.jpg");
+    border-radius: 0 0 0 0;
+    /*box-shadow: 0em 0.3em 0.2em 0.1em #0A0909;*/
+}
+
+/****************************************************************************
+*
+* CONTENT
+*
+****************************************************************************/
+.main
+{
+    margin-top: 8px;
+    border: 0.0625px solid #CCCCCC;
+    background-color: white;
+    padding: 1.5em;
+    /*box-shadow: 0em 0.3em 0.2em 0.1em #353535;*/
+}
+
+/****************************************************************************
+*
+* CONTENT
+*
+****************************************************************************/
+.content
+{
+
+}
+
+/****************************************************************************
+*
+* RELATED
+*
+****************************************************************************/
+.related
+{
+
+}
+
+/****************************************************************************
+*
+* FOOTER
+*
+****************************************************************************/
+.footer
+{
+
+}
+
+/****************************************************************************
+*
+* CONTENT
+*
+****************************************************************************/
+#banner
+{
+    position: relative;
+}
+
+#search 
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#ui-datepicker-div
+{
+	margin: 1.5em;
+	border: 2px solid black;
+	background-color: #FFB547;
+}
+
+/****************************************************************************
+*
+* OTHERS
+*
+****************************************************************************/
+*, *:before, *:after 
+{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+img
+{
+    width: 100%;
+}
+
+.no-padding
+{
+    padding: 0;
+}
+
+.no-margin
+{
+    margin: 0;
+}
+
+hr
+{
+    border-color: #B1B1B1;
+}
