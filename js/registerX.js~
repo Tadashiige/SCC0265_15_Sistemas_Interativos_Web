@@ -1,0 +1,86 @@
+/**
+*	REGISTER X - SCRIPT
+*
+*/
+
+jQuery(function (){
+	var status = localStorage.getItem('login');
+	if(status != 'done'){
+		confirm('por favor identifique-se no login.');
+		window.open('login.html');
+		window.close();
+	} else{
+		var user = localStorage.getItem('user');
+		var userData = localStorage.getItem(user);
+		//console.log(userData);
+		$("#name").val(userData.split('\n')[pos.name]);
+	}
+	//$("#date").datepicker();
+	
+});
+
+function registerSuccess () {
+
+	$(".error").remove();
+
+	var data = "";
+
+	data += $("#name").val() + '\n';
+	data += $("#nameX").val() + '\n';
+	data += $("#descrip").val() + '\n';
+
+	for(var i=0; i<$(".img").length; i++)
+		if($(".img").eq(i).val() != "")
+			data += $(".img").eq(i).val() + '\n';
+
+	for(var i=0; i<$(".category").length; i++)
+		if($(".category").eq(i).prop("checked"))
+			data += $(".category").eq(i).val() + '\n';
+
+	for(var i=0; i<$(".extra").length; i++)
+		if($(".extra").eq(i).val() != "")
+			data += $(".extra").eq(i).val() + '\n';
+
+	alert(data);
+	alert("cadastro de X efetuado com sucesso.");
+/*	
+	localStorage.setItem($("#email").val() + 'data', data);
+*/	
+	//window.location.replace("index.html");
+	
+	return true;
+}
+
+function validator ()
+{
+
+	var report = [];
+	if (IsNotName($("#nameX").val())){
+
+		report[report.length] = "invalid name\n";
+	}
+
+	if (IsNotCategory($(".category"))){
+
+		report[report.length] = "category not checked\n";
+	}
+
+	if (IsNotInserted($(".img"))){
+
+		report[report.length] = "image was not inserted\n";
+	}
+
+	if (IsNotInserted($(".extra"))){
+
+		report[report.length] = "extra informations was not inputted\n";
+	}
+	
+	if(report.length == 0){
+
+		return registerSuccess ();
+	}	
+
+	reportError (report);
+	
+	return false;
+}

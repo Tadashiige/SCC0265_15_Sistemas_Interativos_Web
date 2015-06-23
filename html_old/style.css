@@ -83,13 +83,13 @@ body
 
 /****************************************************************************
 *
-* MAIN
+* CONTENT
 *
 ****************************************************************************/
 .main
 {
     margin-top: 8px;
-    border: 1px solid #CCCCCC;
+    border: 0.0625px solid #CCCCCC;
     background-color: white;
     padding: 1.5em;
     /*box-shadow: 0em 0.3em 0.2em 0.1em #353535;*/
@@ -103,33 +103,6 @@ body
 .content
 {
 
-}
-
-.track textarea
-{
-    width: 100%;
-}
-
-.track p
-{
-    font-weight: bold;
-}
-
-.track span
-{
-    font-weight: normal;
-}
-
-.track table
-{
-    width: 100%;
-}
-
-.track td, track tr
-{
-    border: 1px solid black;
-    padding-left: 5px;
-    font-size: 0.8em;
 }
 
 /****************************************************************************
@@ -160,16 +133,6 @@ body
 #banner
 {
     position: relative;
-}
-
-
-@media screen and (max-width: 1024px)
-{
-    #search 
-    {
-	   position: static;
-    }
-
 }
 
 #search 

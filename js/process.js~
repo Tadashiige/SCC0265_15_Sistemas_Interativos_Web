@@ -1,0 +1,11 @@
+/**
+* 	PROCESS - SCRIPT
+*
+*/
+
+$("#newField").click(function (){
+	alert("ent4rou");
+//	var fieldClass = this.prev().attr('class');
+//	alert(fieldClass);
+//	$(this).before('<input type="text" class='+fieldClass+'>');	
+});

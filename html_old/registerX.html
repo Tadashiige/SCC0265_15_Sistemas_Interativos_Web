@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registro de Música</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <!-- Bootstrap -->
@@ -90,7 +90,8 @@
 
             </div>
             
-            <div class="row main"> <!-- main -->
+            <div class="main">
+                <div class="contained-fluid row"> <!-- main -->
                     <div class="col-md-9 no-padding">
                         <section class="content"> <!--content -->
 				<form id="login">
@@ -113,7 +114,7 @@
 							<label for="cat1">Funk</label>
 							<input id = "cat1" class="category" type="checkbox" value="Funk">
 							<br>
-							<label for="cat2">Hip-Hip</label>
+							<label for="cat2">Hip-Hop</label>
 							<input id = "cat2" class="category" type="checkbox" value="Hip-Hop">
 							<br>
 							<label for="cat3">Pagode</label>
@@ -132,7 +133,7 @@
 						<input id="newField" type="button" class="newData" value="next">
 						<br>
 						
-						<input id="submit" type="submit" value="login" onclick="return validator();">
+						<input id="submit"type="submit" value="login" onclick="return validator();">
 					</fieldset>
 				</form>
                         </section>
@@ -182,16 +183,18 @@
                                 </div>
                             </div>
                             <hr>
-                         
+                            
                         </aside> <!--related-->
                     </div>
-                    
+
                 </div> <!-- main -->
-                
-                <div class="row footer"> <!-- footer -->
-                </div>
+            </div>
             
-            </div> <!-- container -->
+            <div class="row"> <!-- footer -->
+            </div>  
+        </div>
+    
+
     </body>
 
 </html>

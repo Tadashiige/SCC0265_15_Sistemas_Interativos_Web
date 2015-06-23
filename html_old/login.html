@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <!-- Bootstrap -->
@@ -25,13 +25,15 @@
                             <img src="images/logo.png" alt="logo">
                             
                             <div class="login">
-                                <a href="login.html">Login</a>
+                                <a href="">Login</a>
                                 <a href="signin.html">Cadastre-se</a>
                             </div>
                             
                         </header> <!-- header-->
                     </div>
                 </div>
+                
+
                 
                 <div id="search" class="col-md-2 no-padding">
                     <div class="search"> <!-- search -->    
@@ -63,7 +65,7 @@
                                 
                                 <a class="navbar-brand" href="index.html">Home</a>
                             </div>
-                                                            
+                                
                             <div class="collapse navbar-collapse" id="menu-collapse">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
@@ -78,42 +80,42 @@
 											<li><a href="#">Rock</a></li>
 											<li><a href="#">Sertanejo</a></li> <!-- dropdown menu -->
                                         </ul>
-                                    </li>									
+                                    </li>
                                 </ul> 
                             </div>
-                            
                         </div>
                     </nav> <!-- menu-->
                 </div>
             </div>
             
-            
-            <div class="row main">
-                <div class="col-md-12 no-padding">
-                    <section class="content"> <!--content -->
-                        <form id="login">
-                            <fieldset>
-				                <legend>LOGIN</legend>
-								    <label for="email">Email</label>
-                                    <input id="email" type="text">
-								    <br>
-								    
-                                    <label for="password">Password</label>
-								    <input id="password" type="password">
-								    <br>
+            <div class="main">
+                <div class="row"> <!-- main -->
+                    <div>
+                        <section class="content"> <!--content -->
+							<form id="login">
+								<fieldset>
+									<legend>LOGIN</legend>
+									<label for="email">Email</label>
+									<input id="email" type="text">
+									<br>
+									<label for="password">Password</label>
+									<input id="password" type="password">
+									<br>
 									
-								    <input id="submit" type="submit" value="login" onclick="return validator();">
-				            </fieldset>
-				        </form>        
-                            
-                    </section>
-                </div> <!--content -->
+									<input id="submit"type="submit" value="login" onclick="return validator();">
+								</fieldset>
+							</form>
+                        </section>
+                    </div> <!--content -->                    
+                    
+                    </div>
+                </div> <!-- main -->
             </div>
             
-            <div class="row footer"> <!-- footer -->
-            </div>
-            
-        </div> <!-- container -->
+            <div class="row"> <!-- footer -->
+            </div>  
+        </div>
+    
 
     </body>
 

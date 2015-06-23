@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <!-- Bootstrap -->
@@ -9,10 +9,11 @@
         <link href="style.css" rel="stylesheet">
 		
 		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
         <script src="js/bootstrap.min.js"></script>
 		
 		<script src="js/validator.js"></script>
-		<script src="js/login.js"></script>
+		<script src="js/signin.js"></script>
 		<script src="js/process.js"></script>		
     </head>
     <body>
@@ -26,12 +27,14 @@
                             
                             <div class="login">
                                 <a href="login.html">Login</a>
-                                <a href="signin.html">Cadastre-se</a>
+                                <a href="">Cadastre-se</a>
                             </div>
                             
                         </header> <!-- header-->
                     </div>
                 </div>
+                
+
                 
                 <div id="search" class="col-md-2 no-padding">
                     <div class="search"> <!-- search -->    
@@ -63,7 +66,7 @@
                                 
                                 <a class="navbar-brand" href="index.html">Home</a>
                             </div>
-                                                            
+                                
                             <div class="collapse navbar-collapse" id="menu-collapse">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
@@ -78,42 +81,89 @@
 											<li><a href="#">Rock</a></li>
 											<li><a href="#">Sertanejo</a></li> <!-- dropdown menu -->
                                         </ul>
-                                    </li>									
+                                    </li>
                                 </ul> 
                             </div>
-                            
                         </div>
                     </nav> <!-- menu-->
                 </div>
             </div>
             
-            
-            <div class="row main">
-                <div class="col-md-12 no-padding">
-                    <section class="content"> <!--content -->
-                        <form id="login">
-                            <fieldset>
-				                <legend>LOGIN</legend>
-								    <label for="email">Email</label>
-                                    <input id="email" type="text">
-								    <br>
-								    
-                                    <label for="password">Password</label>
-								    <input id="password" type="password">
-								    <br>
-									
-								    <input id="submit" type="submit" value="login" onclick="return validator();">
-				            </fieldset>
-				        </form>        
-                            
-                    </section>
-                </div> <!--content -->
+            <div class="main">
+                <div class="row"> <!-- main -->
+                    <div>
+                        <section class="content"> <!--content -->
+				<form id="login">
+					<fieldset>
+						<legend>SIGNIN</legend>
+						<label for="name">Name</label>
+						<input id="name" type="text">
+						<br>
+						<label for="date">Date</label>
+						<input id="date" type="date">
+						<br>
+						<label for="city">City</label>
+						<input id="city" type="text">
+						<br>
+						<label for="state">State</label>
+						<select id="state">
+							<option value="--">--</option>
+							<option value="AC">AC</option>
+							<option value="AL">AL</option>
+							<option value="AP">AP</option>
+							<option value="AM">AM</option>
+							<option value="BA">BA</option>
+							<option value="CE">CE</option>
+							<option value="DF">DF</option>
+							<option value="ES">ES</option>
+							<option value="GO">GO</option>
+							<option value="MA">MA</option>
+							<option value="MT">MT</option>
+							<option value="MS">MS</option>
+							<option value="MG">MG</option>
+							<option value="PA">PA</option>
+							<option value="PB">PB</option>
+							<option value="PR">PR</option>
+							<option value="PE">PE</option>
+							<option value="PI">PI</option>
+							<option value="RJ">RJ</option>
+							<option value="RN">RN</option>
+							<option value="RS">RS</option>
+							<option value="RO">RO</option>
+							<option value="RR">RR</option>
+							<option value="SC">SC</option>
+							<option value="SP">SP</option>
+							<option value="SE">SE</option>
+							<option value="TO">TO</option>
+						</select>
+						<br>
+						<label for="celphone">Celphone</label>
+						<input id="celphone" type="text">
+						<br>
+						<label for="email">Email</label>
+						<input id="email" type="text">
+						<br>
+						<label for="password">Password</label>
+						<input id="password" type="text">
+						<br>
+						<label for="confirm">Confirm Password</label>
+						<input id="confirm" type="text">
+						<br>
+						
+						<input id="submit"type="submit" value="login" onclick="return validator();">
+					</fieldset>
+				</form>
+                        </section>
+                    </div> <!--content -->                    
+                    
+                    </div>
+                </div> <!-- main -->
             </div>
             
-            <div class="row footer"> <!-- footer -->
-            </div>
-            
-        </div> <!-- container -->
+            <div class="row"> <!-- footer -->
+            </div>  
+        </div>
+    
 
     </body>
 
