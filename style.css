@@ -420,6 +420,10 @@ hr
 }
 
 .img-link:hover
+.img-link
 {
     opacity: 0.5;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    opacity: 1;
 }
