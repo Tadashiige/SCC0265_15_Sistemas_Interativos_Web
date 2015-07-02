@@ -20,10 +20,12 @@ function reportError (report) {
 	
 	var msg = "";
 	for(var i=0; i<report.length; i++)
-		msg+= report[i]+"\n";
+		msg+= "<span>"+(i+1)+" . "+report[i]+"</span><br>";
 	
 	$(".error").remove();
-	$("#submit").before('<div class="error"><span>'+ msg +'</span><br></div>');
+	
+	console.log(msg);
+	$("#submit").before('<div class="error">'+ msg +'</div>');
 }
 
 function IsNotEmail (email) {
@@ -45,7 +47,7 @@ function IsInvalidDate (date) {
 	var vDate = date.split("-");
 	console.log(vDate);
 	if(vDate.length == 3){
-		if(vDate[0].length == 4 && vDate[1].length == 2 && vDate[2].length == 2){
+		if(vDate[2].length == 4 && vDate[1].length == 2 && vDate[0].length == 2){
 				date = new Date (vDate[0], vDate[1]-1, vDate[2]);
 				today = new Date ();
 				console.log(today);

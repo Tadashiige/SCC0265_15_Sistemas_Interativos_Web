@@ -189,9 +189,24 @@ body
     color: white;
 }
 
-.button-form:hover
+#newField{
+	background-color: blue;
+}
+
+
+.button-form:hover, #newField:hover
 {
     background-color: #A31818;
+}
+
+form{
+	margin-top: 2em; 
+}
+
+.form-background{
+	background-color: silver;
+	padding: 2em;
+	border-radius: 6px 6px 6px 6px;
 }
 
 .legend
@@ -199,6 +214,10 @@ body
     margin-top: 10px;
     font-size: 40px;
     border: none;
+}
+
+textarea{
+	resize: vertical;
 }
 
 .track textarea
@@ -232,6 +251,7 @@ body
 {
     background-color: #141414;
 }
+
 
 
 /****************************************************************************
@@ -313,6 +333,19 @@ body
         max-height:500px;
     }
 }
+
+
+/****************************************************************************
+*
+* Scripting
+*
+****************************************************************************/
+
+.error{
+	color: red;
+	font-size: 2em;
+}
+
 /****************************************************************************
 *
 * RELATED
@@ -384,6 +417,7 @@ body
 * OTHERS
 *
 ****************************************************************************/
+
 *, *:before, *:after 
 {
    -webkit-box-sizing: border-box;

@@ -29,7 +29,6 @@ function signinSuccess () {
 
 function validator ()
 {
-	console.log("entrou");
 	var data = localStorage.getItem($("#email").val());
 	var report = [];
 	if(data != null){
