@@ -21,7 +21,7 @@ jQuery(function (){
 			temp[temp.length] = aux;	
 	}
 	console.log("data size: "+(temp.length));
-	
+	console.log("genero: "+$('.gener').text());
 	$('.gener').text("Gênero: "+type);
 	
 	for(var i=0; i<temp.length; i++){

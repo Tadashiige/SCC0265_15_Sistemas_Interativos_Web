@@ -11,49 +11,42 @@
 		<script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
 		
-		<script src="js/process.js"></script>		
+		<script src="js/process.js"></script>
     </head>
+    
     <body>
-        
-        <div class="container">
-            <div id="banner" class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <header class="header"> <!-- header-->
-                            <img src="images/logo.png" alt="logo">
-                            
-                            <div class="login">
-                                <a href="login.html">Login</a>
-                                <a href="signin.html">Cadastre-se</a>
-                            </div>
-                            
-                        </header> <!-- header-->
+<!--topbar---------------------------------------------------------------------------------------------------->
+        <div class="container-fluid">
+            <div class="row top-bar">
+                    <div class="col-md-10 ">
+                        Discover your Musics
                     </div>
-                </div>
-                
+                    <div class="login col-md-2">
+                        <a href="login.html">Login</a>
+                        <a href="signin.html">Cadastre-se</a>
+                    </div>
+            </div>
 
-                
-                <div id="search" class="col-md-2 no-padding">
-                    <div class="search"> <!-- search -->    
-                        <div class="input-group">
-                            
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                            </span>
-                            
+<!--BANNER---------------------------------------------------------------------------------------------------->
+            <div id="banner" class="row">
+                <div class="col-md-4 no-pad">
+                    <img src="images/15.png" alt="logo"> 
+                </div>
+                <div class="col-md-8">
+                    <header class="header row">
+                        <div class="site-name col-md-12 no-pad">
+                            <!--MUSICS ONFIRE-->
                         </div>
-                    </div> <!-- search -->
+                    </header>
                 </div>
             </div>
-            
+
+<!--MENU---------------------------------------------------------------------------------------------------->
             <div class="row">
-                <div class="col-md-12 no-margin no-padding">
+                <div class="col-md-12 no-margin no-pad">
                     <nav class="navbar navbar-default menu no-margin"> <!-- menu-->
                         <div class="container-fluid">
                             <div class="navbar-header">
-                                
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -70,7 +63,7 @@
                                     <li><a href="registerX.html">Registrar Música</a></li>
 									<li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lista <span class="caret"></span></a>
-                                        <ul class="dropdown-menu" role="menu"> <!-- dropdown menu -->
+                                        <ul class="dropdown-menu dropdown-bg" role="menu"> <!-- dropdown menu -->
 											<li><a href="#">Funk</a></li>
 											<li><a href="#">Hip-Hop</a></li>
 											<li><a href="#">Pagode</a></li>
@@ -86,70 +79,153 @@
                     </nav> <!-- menu-->
                 </div>
             </div>
-            
-            <div class="row main">
-                <div class="col-md-9 no-padding">
-                    <section class="content"> <!--content -->
 
+<!--CONTEUDO---------------------------------------------------------------------------------------------------->
+            <div class="row">
+                <div class="col-md-9">
+                    <section class="content"> <!--content -->     
+                        <h1>Gênero 1</h1>
+                        <div class="row no-margin">    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/00.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/03.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/34x34vs0vss216.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/concert1.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+                        </div>
+                        
+                        <h1>Gênero 2</h1>
+                        <div class="row no-margin">    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/00.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/03.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/34x34vs0vss216.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/concert1.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+                        </div>
+                        
+                        <h1>Gênero 3</h1>
+                        <div class="row no-margin">    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/00.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/03.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/34x34vs0vss216.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/concert1.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+                        </div>
+                        
+                        <h1>Gênero 4</h1>
+                        <div class="row no-margin">    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/00.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+    
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/03.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/34x34vs0vss216.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+
+                            <div class="col-md-3 item">
+                                <a href=""><img class="img-resp-4" src="images/concert1.jpg"></a>
+                                <p class="item-name">Nome da Banda</p>
+                                <p class="item-buttom">Nota: 10</p>
+                            </div>
+                        </div>
                             
-                    </section>
-                </div> <!--content -->
-                    
+                    </section> <!--content -->
+                </div> 
+
+<!--RELACIONADOS---------------------------------------------------------------------------------------------------->
                 <div class="col-md-3">
                     <aside class="related"> <!--related-->
                         <div class="row">
-                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                                </ol>
-
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Chania">
-                                    </div>
-
-                                    <div class="item">
-                                        <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Chania">
-                                    </div>
-
-                                    <div class="item">
-                                        <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Flower">
-                                    </div>
-
-                                    <div class="item">
-                                        <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Flower">
-                                    </div>
-                                </div>
-                                    
-                                <!-- Left and right controls -->
-                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                                    
-                            </div>
+                            <h2>Relacionado 1</h2> <!--colocar o tipo certo-->
+                            <a href=""><img class="img-link" src="images/34x34vs0vss216.jpg"></a>
+                            <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                            <hr>
                         </div>
-                        <hr>
-                            
+                        <div class="row">
+                            <h2>Relacionado 2</h2> <!--colocar o tipo certo-->
+                            <a href=""><img class="img-link" src="images/Party-HD-Wallpaper-6499.jpg"></a>
+                            <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                            <hr>
+                        </div>
+                        
+                        <div class="row">
+                            <h2>Relacionado 3</h2> <!--colocar o tipo certo-->
+                            <a href=""><img class="img-link" src="images/03.jpg"></a>
+                            <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                        </div>
                     </aside> <!--related-->
                 </div>
             </div>
-            
+
+<!--RODAPÉ---------------------------------------------------------------------------------------------------->
             <div class="row"> <!-- footer -->
+                <footer class="footer">
+                    <p>Todos os direitos reservados</p>
+                </footer>
             </div>
-            
         </div>
-    
-
     </body>
-
 </html>
