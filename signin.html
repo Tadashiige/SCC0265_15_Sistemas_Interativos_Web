@@ -17,46 +17,38 @@
 		<script src="js/process.js"></script>		
     </head>
     <body>
-        
-        <div class="container">
-            <div id="banner" class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <header class="header"> <!-- header-->
-                            <img src="images/logo.png" alt="logo">
-                            
-                            <div class="login">
-                                <a href="login.html">Login</a>
-                                <a href="">Cadastre-se</a>
-                            </div>
-                            
-                        </header> <!-- header-->
+ <!--topbar---------------------------------------------------------------------------------------------------->
+        <div class="container-fluid">
+            <div class="row top-bar">
+                    <div class="col-md-10 ">
+                        Discover your Musics
                     </div>
-                </div>
-                
+                    <div class="login col-md-2">
+                        <a href="login.html">Login</a>
+                        <a href="signin.html">Cadastre-se</a>
+                    </div>
+            </div>
 
-                
-                <div id="search" class="col-md-2 no-padding">
-                    <div class="search"> <!-- search -->    
-                        <div class="input-group">
-                            
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                            </span>
-                            
+<!--BANNER---------------------------------------------------------------------------------------------------->
+            <div id="banner" class="row">
+                <div class="col-md-4 no-pad">
+                    <img src="images/15.png" alt="logo"> 
+                </div>
+                <div class="col-md-8">
+                    <header class="header row">
+                        <div class="site-name col-md-12 no-pad">
+                            <!--MUSICS ONFIRE-->
                         </div>
-                    </div> <!-- search -->
+                    </header>
                 </div>
             </div>
-            
+
+<!--MENU---------------------------------------------------------------------------------------------------->
             <div class="row">
-                <div class="col-md-12 no-margin no-padding">
+                <div class="col-md-12 no-margin no-pad">
                     <nav class="navbar navbar-default menu no-margin"> <!-- menu-->
                         <div class="container-fluid">
                             <div class="navbar-header">
-                                
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -66,14 +58,14 @@
                                 
                                 <a class="navbar-brand" href="index.html">Home</a>
                             </div>
-                                
+                                                            
                             <div class="collapse navbar-collapse" id="menu-collapse">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                                     <li><a href="registerX.html">Registrar Música</a></li>
 									<li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lista <span class="caret"></span></a>
-                                        <ul class="dropdown-menu" role="menu"> <!-- dropdown menu -->
+                                        <ul class="dropdown-menu dropdown-bg" role="menu"> <!-- dropdown menu -->
 											<li><a href="#">Funk</a></li>
 											<li><a href="#">Hip-Hop</a></li>
 											<li><a href="#">Pagode</a></li>
@@ -81,9 +73,10 @@
 											<li><a href="#">Rock</a></li>
 											<li><a href="#">Sertanejo</a></li> <!-- dropdown menu -->
                                         </ul>
-                                    </li>
+                                    </li>									
                                 </ul> 
                             </div>
+                            
                         </div>
                     </nav> <!-- menu-->
                 </div>
@@ -93,73 +86,106 @@
                     <div>
                         <section class="content"> <!--content -->
 				            <form id="login">
-					           <fieldset>
-						          <legend>SIGNIN</legend>
-						          <label for="name">Name</label>
-						          <input id="name" type="text">
-						          <br>
-						          <label for="date">Date</label>
-						          <input id="date" type="date">
-						          <br>
-						          <label for="city">City</label>
-						          <input id="city" type="text">
-						          <br>
-						          <label for="state">State</label>
-						          <select id="state">
-							         <option value="--">--</option>
-							         <option value="AC">AC</option>
-							         <option value="AL">AL</option>
-							         <option value="AP">AP</option>
-							         <option value="AM">AM</option>
-							         <option value="BA">BA</option>
-							         <option value="CE">CE</option>
-							         <option value="DF">DF</option>
-							         <option value="ES">ES</option>
-							         <option value="GO">GO</option>
-							         <option value="MA">MA</option>
-							         <option value="MT">MT</option>
-							         <option value="MS">MS</option>
-							         <option value="MG">MG</option>
-							         <option value="PA">PA</option>
-							         <option value="PB">PB</option>
-							         <option value="PR">PR</option>
-							         <option value="PE">PE</option>
-							         <option value="PI">PI</option>
-							         <option value="RJ">RJ</option>
-							         <option value="RN">RN</option>
-							         <option value="RS">RS</option>
-							         <option value="RO">RO</option>
-							         <option value="RR">RR</option>
-							         <option value="SC">SC</option>
-							         <option value="SP">SP</option>
-							         <option value="SE">SE</option>
-							         <option value="TO">TO</option>
-						          </select>
-						          <br>
-						      <label for="celphone">Celphone</label>
-						      <input id="celphone" type="text">
-						      <br>
-						      <label for="email">Email</label>
-						      <input id="email" type="text">
-						      <br>
-						      <label for="password">Password</label>
-						      <input id="password" type="text">
-						      <br>
-						      <label for="confirm">Confirm Password</label>
-						      <input id="confirm" type="text">
-						      <br>
-						
-						      <input id="submit" type="submit" value="login" onclick="return validator();">
-					       </fieldset>
+                                <fieldset>
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <legend class="legend">Cadastre-se</legend>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="name">Name:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <input class="col-md-12 no-pad input-form" id="name" type="text">
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="date">Date:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <input class="col-md-12 no-pad input-form" id="date" type="date">
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="city">City:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <input class="col-md-12 no-pad input-form" id="city" type="text">
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="state">State:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <select class="col-md-4 no-pad input-form" id="state">
+                                                <option value="--">--</option>
+                                                <option value="AC">AC</option>
+                                                <option value="AL">AL</option>
+                                                <option value="AP">AP</option>
+                                                <option value="AM">AM</option>
+                                                <option value="BA">BA</option>
+                                                <option value="CE">CE</option>
+                                                <option value="DF">DF</option>
+                                                <option value="ES">ES</option>
+                                                <option value="GO">GO</option>
+                                                <option value="MA">MA</option>
+                                                <option value="MT">MT</option>
+                                                <option value="MS">MS</option>
+                                                <option value="MG">MG</option>
+                                                <option value="PA">PA</option>
+                                                <option value="PB">PB</option>
+                                                <option value="PR">PR</option>
+                                                <option value="PE">PE</option>
+                                                <option value="PI">PI</option>
+                                                <option value="RJ">RJ</option>
+                                                <option value="RN">RN</option>
+                                                <option value="RS">RS</option>
+                                                <option value="RO">RO</option>
+                                                <option value="RR">RR</option>
+                                                <option value="SC">SC</option>
+                                                <option value="SP">SP</option>
+                                                <option value="SE">SE</option>
+                                                <option value="TO">TO</option>
+                                            </select>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="celphone">Celphone:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <input class="col-md-12 no-pad input-form" id="celphone" type="text">
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="email">Email:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <input class="col-md-12 no-pad input-form" id="email" type="text">
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="password">Password:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <input class="col-md-12 no-pad input-form" id="password" type="text">
+                                        </div>
+                                        <div class="row no-pad">
+                                            <label class="col-md-12 no-pad" for="confirm">Confirm Password:</label>
+                                        </div>
+                                        <div class="row no-pad">
+                                            <input class="col-md-12 no-pad input-form" id="confirm" type="text">
+                                        </div>
+                                        
+                                        <div class="row no-pad">
+								            <input class="col-md-3 no-pad button-form" id="submit" type="submit" value="login" onclick="return validator();">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+				                </fieldset>
 				        </form>
                     </section>
                 </div> <!--content -->                    
-                    
             </div> <!-- main -->
             
-            <div class="row footer"> <!-- footer -->
+            <div class="row"> <!-- footer -->
+                <footer class="footer">
+                    <p>Todos os direitos reservados</p>
+                </footer>
             </div>
-            
         </div> <!-- container -->
 
     </body>
