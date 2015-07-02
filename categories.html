@@ -31,47 +31,39 @@
             
         </script>
     </head>
-    <body>
-        
-        <div class="container">
-            <div id="banner" class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <header class="header"> <!-- header-->
-                            <img src="images/logo.png" alt="logo">
-                            
-                            <div class="login">
-                                <a href="login.html">Login</a>
-                                <a href="">Cadastre-se</a>
-                            </div>
-                            
-                        </header> <!-- header-->
+<body>
+<!--topbar---------------------------------------------------------------------------------------------------->
+        <div class="container-fluid">
+            <div class="row top-bar">
+                    <div class="col-md-10 ">
+                        Discover your Musics
                     </div>
-                </div>
-                
+                    <div class="login col-md-2">
+                        <a href="login.html">Login</a>
+                        <a href="signin.html">Cadastre-se</a>
+                    </div>
+            </div>
 
-                
-                <div id="search" class="col-md-2 no-padding">
-                    <div class="search"> <!-- search -->    
-                        <div class="input-group">
-                            
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                            </span>
-                            
+<!--BANNER---------------------------------------------------------------------------------------------------->
+            <div id="banner" class="row">
+                <div class="col-md-4 no-pad">
+                    <img src="images/15.png" alt="logo"> 
+                </div>
+                <div class="col-md-8">
+                    <header class="header row">
+                        <div class="site-name col-md-12 no-pad">
+                            <!--MUSICS ONFIRE-->
                         </div>
-                    </div> <!-- search -->
+                    </header>
                 </div>
             </div>
-            
+
+<!--MENU----------------------------------------------------------------------------------------------------->
             <div class="row">
-                <div class="col-md-12 no-margin no-padding">
+                <div class="col-md-12 no-margin no-pad">
                     <nav class="navbar navbar-default menu no-margin"> <!-- menu-->
                         <div class="container-fluid">
                             <div class="navbar-header">
-                                
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -81,14 +73,14 @@
                                 
                                 <a class="navbar-brand" href="index.html">Home</a>
                             </div>
-                                
+                                                            
                             <div class="collapse navbar-collapse" id="menu-collapse">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                                     <li><a href="registerX.html">Registrar Música</a></li>
 									<li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lista <span class="caret"></span></a>
-                                        <ul class="dropdown-menu" role="menu"> <!-- dropdown menu -->
+                                        <ul class="dropdown-menu dropdown-bg" role="menu"> <!-- dropdown menu -->
 											<li><a href="#">Funk</a></li>
 											<li><a href="#">Hip-Hop</a></li>
 											<li><a href="#">Pagode</a></li>
@@ -96,859 +88,21 @@
 											<li><a href="#">Rock</a></li>
 											<li><a href="#">Sertanejo</a></li> <!-- dropdown menu -->
                                         </ul>
-                                    </li>
+                                    </li>									
                                 </ul> 
                             </div>
+                            
                         </div>
                     </nav> <!-- menu-->
                 </div>
-
             </div>
             
-            
-            
-            
-            
-            <!------------------------------------------------- main -------------------------------------------------------------------------------->
-            
-            <div class="row main"> 
-                <section class="col-md-9 content">
-                        
-                        <div class="row">
-                             <h2 class="gener">Gênero Qualquer</h2>
-                        </div>    
-                    
-                        <div class="row">
-                            <div class="col-md-6"><!------------------------------------------------- 1º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6"><!------------------------------------------------- 2º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">November 9, 1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                        
-                                        <!--<input type="text" width="100%">-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="row">
-                            <div class="col-md-6"><!------------------------------------------------- 3º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6"><!------------------------------------------------- 4º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">November 9, 1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                        
-                                        <!--<input type="text" width="100%">-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="row">
-                            <div class="col-md-6"><!------------------------------------------------- 5º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6"><!------------------------------------------------- 6º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">November 9, 1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                        
-                                        <!--<input type="text" width="100%">-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="row">
-                            <div class="col-md-6"><!------------------------------------------------- 7º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6"><!------------------------------------------------- 8º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">November 9, 1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                        
-                                        <!--<input type="text" width="100%">-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="row">
-                            <div class="col-md-6"><!------------------------------------------------- 9º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6"><!------------------------------------------------- 10º -------------------------------------------------------------------------------->
-                                <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
-                                    <div class="col-md-4 no-padding">
-                                        <img itemprop="image" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Prettyflycover.jpg/220px-Prettyflycover.jpg" alt="Pretty Fly Cover">
-                                        <div id="testRater" class="stat">
-                                            <label for="rating">Avaliação</label>
-                                            <div class="statVal">
-                                                <span class="ui-rater">
-                                                    <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                                    <span class="ui-rater-rating">2.5</span>&#160;(<span class="ui-rater-rateCount">4</span>)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="col-md-8"> 
-                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
-    
-                                        <p>Artista: 
-                                            <span itemprop="byArtist"> 
-                                                <span itemprop="name">The Offspring</span>
-                                            </span>
-                                        </p>
-    
-                                        <p>Album: 
-                                            <span itemprop="inAlbum">
-                                                <span itemprop="name">Americana</span>
-                                            </span>
-                                        </p>
-
-                                        <p>Lançamento: <span itemprop="datePublished">November 9, 1998</span></p>
-    
-                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
-    
-                                        <p>Gravadora: 
-                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                            <span itemprop="name">Columbia</span>
-                                            </span>
-                                        </p>
-                                    
-                                        <p>Descriçâo:</p>
-                                        <textarea readonly></textarea>
-                                        
-                                        <p>Comparação:</p>
-                                        <table>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>musica</td>
-                                                <td>6</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>musica</td>
-                                                <td>7</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>musica</td>
-                                                <td>8</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>musica</td>
-                                                <td>9</td>
-                                                <td>musica</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>musica</td>
-                                                <td>10</td>
-                                                <td>musica</td>
-                                            </tr>
-                                        </table>
-                                        
-                                        
-                                        <!--<input type="text" width="100%">-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						
-                </section> <!--content -->
-                
-                
-                
-                
-                
-                <!------------------------------------------------- related -------------------------------------------------------------------------------->
-                    <div class="col-md-3">
-                        <aside class="related"> <!--related-->
-                            <div class="row">
+<!--CONTEUDO------------------------------------------------------------------------------------------------------------------------------>
+                <div class="col-md-9 no-pad no-margin">
+                    <section class="content"><!--content -->     
+                        <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
                                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
@@ -961,22 +115,22 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Chania">
+                                            <img itemprop="image" src="images/02.jpg" alt="Chania">
                                         </div>
 
                                         <div class="item">
-                                            <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Chania">
+                                            <img itemprop="image" src="images/00.jpg" alt="Chania">
                                         </div>
 
                                         <div class="item">
-                                            <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Flower">
+                                            <img itemprop="image" src="images/04.jpeg" alt="Flower">
                                         </div>
 
                                         <div class="item">
-                                            <img src="http://webneel.com/wallpaper/sites/default/files/images/04-2013/awesome-rain-wallpaper_0.jpg" alt="Flower">
+                                            <img itemprop="image" src="images/16.jpg" alt="Flower">
                                         </div>
                                     </div>
-                                    
+
                                     <!-- Left and right controls -->
                                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -987,23 +141,73 @@
                                         <span class="sr-only">Next</span>
                                     </a>
                                     
+                                    <div> 
+                                        <p>Música: <span itemprop="name">Pretty Fly (for a White Guy)</span></p>
+                                        <p>Artista: 
+                                            <span itemprop="byArtist"> 
+                                                <span itemprop="name">The Offspring</span>
+                                            </span>
+                                        </p>
+                                        <p>Album: 
+                                            <span itemprop="inAlbum">
+                                                <span itemprop="name">Americana</span>
+                                            </span>
+                                        </p>
+
+                                        <p>Lançamento: <span itemprop="datePublished">1998</span></p>
+
+                                        <p>Duração: <span itemprop="duration" content="PT3M7S">3:07</span></p>
+
+                                        <p>Gravadora: 
+                                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                                            <span itemprop="name">Columbia</span>
+                                            </span>
+                                        </p>
+
+                                        <p>Descriçâo:</p>
+                                        <textarea readonly></textarea> 
+                                        <p>Comparação:</p>
+                                    </div>
                                 </div>
                             </div>
-                            <hr>
-                         
-                        </aside> <!--related-->
-                    </div>
-                    
-                </div> <!-- main -->
-                
-            
-            
-            
-            <!------------------------------------------------- footer -------------------------------------------------------------------------------->
-                <div class="row footer"> <!-- footer -->
+                            <div class="col-md-1"></div>
+                        </div>
+                    </section>
                 </div>
-            
-            </div> <!-- container -->
+                    <!--</section>--> <!--content -->
+                
+<!--RELACIONADOS---------------------------------------------------------------------------------------------------->
+            <div class="col-md-3">
+                <aside class="related"> <!--related-->
+                    <div class="row">
+                        <h2>Relacionado 1</h2> <!--colocar o tipo certo-->
+                        <a href=""><img class="img-link" src="images/34x34vs0vss216.jpg"></a>
+                        <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <h2>Relacionado 2</h2> <!--colocar o tipo certo-->
+                        <a href=""><img class="img-link" src="images/Party-HD-Wallpaper-6499.jpg"></a>
+                        <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                        <hr>
+                    </div>
+                        
+                    <div class="row">
+                        <h2>Relacionado 3</h2> <!--colocar o tipo certo-->
+                        <a href=""><img class="img-link" src="images/03.jpg"></a>
+                        <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                    </div>
+                </aside> <!--related-->
+            </div>
+                
+            </div>
+                
+<!--RODAPÉ----------------------------------------------------------------------------------------------------->
+            <div class="row"> <!-- footer -->
+                <footer class="footer">
+                    <p>Todos os direitos reservados</p>
+                </footer>
+            </div>
+        </div>
     </body>
-
 </html>
