@@ -224,28 +224,6 @@ textarea{
     width: 100%;
 }
 
-.track p
-{
-    font-weight: bold;
-}
-
-.track span
-{
-    font-weight: normal;
-}
-
-.track table
-{
-    width: 100%;
-}
-
-.track td, track tr
-{
-    border: 1px solid black;
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-
 .item-list
 {
     background-color: #141414;
@@ -411,6 +389,30 @@ textarea{
 	background-color: #FFB547;
 }*/
 
+
+
+/****************************************************************************
+*
+* OTHERS
+*
+****************************************************************************/
+.coments
+{
+    float: left;
+}
+
+.span-comment
+{
+    font-size: 50px;
+}
+
+.comments p
+{
+    word-wrap: break-word;
+}
+
+
+
 /****************************************************************************
 *
 * OTHERS
@@ -463,4 +465,19 @@ hr
 .clear
 {
     clear: both;
+}
+
+.hr-bold
+{
+    border: 2px solid #464646;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.hr-doted
+{
+    border: 1px solid #464646;
+    border-style: dotted;
+    margin: 0px;
+    margin-bottom: 10px;
 }
