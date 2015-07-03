@@ -76,8 +76,7 @@
                                                             
                             <div class="collapse navbar-collapse" id="menu-collapse">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                    <li><a href="registerX.html">Registrar Música</a></li>
+									<li class="active"><a href="registerX.html">Registrar Música <span class="sr-only">(current)</span></a></li>
 									<li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lista <span class="caret"></span></a>
                                         <ul class="dropdown-menu dropdown-bg" role="menu"> <!-- dropdown menu -->
@@ -89,7 +88,15 @@
 											<li><a href="#">Sertanejo</a></li> <!-- dropdown menu -->
                                         </ul>
                                     </li>									
-                                </ul> 
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <form class="navbar-form navbar-right" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control " placeholder="Search">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                </ul>
                             </div>
                             
                         </div>
@@ -101,14 +108,14 @@
             <div class="row">
                 <div class="col-md-9">
                     <section class="content">
-                    <h1>Gênero Qualquer</h1> 
+                    <h1 class="gener">Gênero: </h1> 
                     
             <!-----LINHA DE ITEM----------------------------------------------------------------------------------------->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
                                     <div class="col-md-6 item">
-                                        <a href=""><img class="img-resp-2" itemprop="image" src="images/02.jpg" alt="Pretty Fly Cover"></a>
+                                        <a href=""><img class="img-resp-2 img-link" itemprop="image" src="images/02.jpg" alt="Pretty Fly Cover"></a>
                                         <p class="item-name">Nome da Banda</p>
                                         <p class="item-field">Nota: 10</p>
                                         <p class="item-field">Avaliações: 100</p>
@@ -117,7 +124,7 @@
                                         <textarea class="item-desc" readonly></textarea>
                                     </div>
                                      <div class="col-md-6 item">
-                                        <a href=""><img class="img-resp-2" itemprop="image" src="images/16.jpg" alt="Pretty Fly Cover"></a>
+                                        <a href=""><img class="img-resp-2 img-link" itemprop="image" src="images/16.jpg" alt="Pretty Fly Cover"></a>
                                         <p class="item-name">Nome da Banda</p>
                                         <p class="item-field">Nota: 10</p>
                                         <p class="item-field">Avaliações: 100</p>
@@ -135,7 +142,7 @@
                             <div class="col-md-12">
                                 <div class="row track" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">                              
                                     <div class="col-md-6 item">
-                                        <a href=""><img class="img-resp-2" itemprop="image" src="images/04.jpeg" alt="Pretty Fly Cover"></a>
+                                        <a href=""><img class="img-resp-2 img-link" itemprop="image" src="images/04.jpeg" alt="Pretty Fly Cover"></a>
                                         <p class="item-name">Nome da Banda</p>
                                         <p class="item-field">Nota: 10</p>
                                         <p class="item-field">Avaliações: 100</p>
@@ -144,7 +151,7 @@
                                         <textarea class="item-desc" readonly></textarea>
                                     </div>
                                      <div class="col-md-6 item">
-                                        <a href=""><img class="img-resp-2" itemprop="image" src="images/03.jpg" alt="Pretty Fly Cover"></a>
+                                        <a href=""><img class="img-resp-2 img-link" itemprop="image" src="images/03.jpg" alt="Pretty Fly Cover"></a>
                                         <p class="item-name">Nome da Banda</p>
                                         <p class="item-field">Nota: 10</p>
                                         <p class="item-field">Avaliações: 100</p>
@@ -162,22 +169,22 @@
                 <div class="col-md-3">
                     <aside class="related"> <!--related-->
                         <div class="row">
-                            <h2>Relacionado 1</h2> <!--colocar o tipo certo-->
-                            <a href=""><img class="img-link" src="images/34x34vs0vss216.jpg"></a>
-                            <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai</p>
+                            <h2>Monsters of Rock</h2> <!--colocar o tipo certo-->
+                            <a href="http://g1.globo.com/musica/noticia/2015/04/kiss-fecha-monsters-rock-com-show-para-35-mil-em-sao-paulo.html"><img class="img-link" src="images/kiss.jpg" alt="Foto da banda KISS"></a>
+                            <p>O segundo e último dia do Monsters of Rock 2015 foi fechado neste domingo (26) pelo Kiss e dominado por bandas sem pudor de se divertir com os clichês do rock. Visual espalhafatoso, hinos à festa e ao "Deus metal" conquistaram 35 mil fãs no Anhembi.</p>
                             <hr>
                         </div>
                         <div class="row">
-                            <h2>Relacionado 2</h2> <!--colocar o tipo certo-->
-                            <a href=""><img class="img-link" src="images/Party-HD-Wallpaper-6499.jpg"></a>
-                            <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                            <h2>Conferência com ZOLTAN BATHORY</h2> <!--colocar o tipo certo-->
+                            <a href="http://whiplash.net/materias/news_817/199866-fivefingerdeathpunch.html"><img class="img-link" src="images/ffdp.jpg" alt="Foto da banda Five Finger Death Punch"></a>
+                            <p>A edição bretã da revista especializada METAL HAMMER teve uma pequena conferência com ZOLTAN BATHORY, do FIVE FINGER DEATH PUNCH, que deve fazer uma turnê por aquele país em breve. O que segue abaixo é um curto trecho traduzido da conversa no qual ele se pronuncia sobre o atual estado de metamorfose da cena do Metal no planeta.</p>
                             <hr>
                         </div>
                         
                         <div class="row">
-                            <h2>Relacionado 3</h2> <!--colocar o tipo certo-->
-                            <a href=""><img class="img-link" src="images/03.jpg"></a>
-                            <p>Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai um monte de blalala Aqui vai  </p>
+                            <h2>Rock in Rio: Divulgação das bandas em setembro</h2> <!--colocar o tipo certo-->
+                            <a href="http://whiplash.net/materias/opinioes/209532-acdc.html"><img class="img-link" src="http://whiplash.org/imagens-n/temp09/1409658932.jpg" alt="Foto da banda ACDC"></a>
+                            <p>O maior festival de música do Brasil deve começar a divulgar suas atrações no mês de setembro. A ansiedade dos fãs é enorme nessa fase de espera, mas algumas bandas já podem ser especuladas.</p>
                         </div>
                     </aside> <!--related-->
                 </div>

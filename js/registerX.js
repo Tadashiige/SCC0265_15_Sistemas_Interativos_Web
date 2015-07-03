@@ -53,9 +53,8 @@ jQuery(function (){
 				default:						
 						return;
 			}
-			$(this).before('<label for="">'+label+'</label>');
-			$(this).before('<input type="text" class='+fieldClass+' maxlength="50">');		
-			$(this).before('<br>');
+
+			$('#lastTag').before('<div class="row no-pad"><label class="col-md-3 no-pad " for="">'+label+'</label><input type="text" class="col-md-9 no-pad input-form" '+fieldClass+' maxlength="50"></div>');
 			counter++;
 			if(counter == 5)
 				$(this).remove();

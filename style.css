@@ -122,20 +122,11 @@ body
     padding-left: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
-    
-    transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
-    opacity: 1;
-}
-
-.item:hover
-{
-    opacity: 0.4;
 }
 
 .item-name
 {
-    color: darkgrey;
+    color: #c1c1c1;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 10px;
@@ -145,10 +136,20 @@ body
 
 .item-field
 {
-    color: dimgrey;
+    color: #919191;
     padding-left: 5px;
     padding-right: 5px;
     background-color: #141414; 
+    margin: 0;
+}
+
+.item-buttom
+{
+    color: #919191;
+    background-color: #141414;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: 0;
 }
 
@@ -158,16 +159,6 @@ body
     margin: 0;
     margin-bottom: 10px;
     border: none;
-}
-
-.item-buttom
-{
-    color: dimgrey;
-    background-color: #141414;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 0;
 }
 
 .input-form
@@ -189,9 +180,24 @@ body
     color: white;
 }
 
-.button-form:hover
+#newField{
+	background-color: blue;
+}
+
+
+.button-form:hover, #newField:hover
 {
     background-color: #A31818;
+}
+
+form{
+	margin-top: 2em; 
+}
+
+.form-background{
+	background-color: silver;
+	padding: 2em;
+	border-radius: 6px 6px 6px 6px;
 }
 
 .legend
@@ -201,37 +207,20 @@ body
     border: none;
 }
 
+textarea{
+	resize: vertical;
+}
+
 .track textarea
 {
     width: 100%;
-}
-
-.track p
-{
-    font-weight: bold;
-}
-
-.track span
-{
-    font-weight: normal;
-}
-
-.track table
-{
-    width: 100%;
-}
-
-.track td, track tr
-{
-    border: 1px solid black;
-    padding-left: 5px;
-    font-size: 0.8em;
 }
 
 .item-list
 {
     background-color: #141414;
 }
+
 
 
 /****************************************************************************
@@ -313,6 +302,19 @@ body
         max-height:500px;
     }
 }
+
+
+/****************************************************************************
+*
+* Scripting
+*
+****************************************************************************/
+
+.error{
+	color: red;
+	font-size: 2em;
+}
+
 /****************************************************************************
 *
 * RELATED
@@ -324,9 +326,10 @@ body
     font-size: 12px;
 }
 
-.related h2
+.related p
 {
-    font-size: 20px;
+    color: #909090;
+    padding: 0.435em;
 }
 
 /****************************************************************************
@@ -379,11 +382,36 @@ body
 	background-color: #FFB547;
 }*/
 
+
+
 /****************************************************************************
 *
 * OTHERS
 *
 ****************************************************************************/
+.coments
+{
+    float: left;
+}
+
+.span-comment
+{
+    font-size: 50px;
+}
+
+.comments p
+{
+    word-wrap: break-word;
+}
+
+
+
+/****************************************************************************
+*
+* OTHERS
+*
+****************************************************************************/
+
 *, *:before, *:after 
 {
    -webkit-box-sizing: border-box;
@@ -421,13 +449,35 @@ hr
 
 .img-link:hover
 {
-    opacity: 0.5;
-    transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
-    opacity: 1;
+    opacity: 0.4;
 }
 
 .clear
 {
     clear: both;
+}
+
+.hr-bold
+{
+    border: 2px solid #464646;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.hr-doted
+{
+    border: 1px solid #464646;
+    border-style: dotted;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+h1, h2, h3
+{
+    color: #d8d5cf;
+}
+
+p
+{
+    color: #909090;
 }
