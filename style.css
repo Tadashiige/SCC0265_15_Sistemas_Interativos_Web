@@ -122,19 +122,11 @@ body
     padding-left: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
-    transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
-    opacity: 1;
-}
-
-.item:hover
-{
-    opacity: 0.4;
 }
 
 .item-name
 {
-    color: darkgrey;
+    color: #c1c1c1;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 10px;
@@ -144,10 +136,20 @@ body
 
 .item-field
 {
-    color: dimgrey;
+    color: #919191;
     padding-left: 5px;
     padding-right: 5px;
     background-color: #141414; 
+    margin: 0;
+}
+
+.item-buttom
+{
+    color: #919191;
+    background-color: #141414;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: 0;
 }
 
@@ -157,16 +159,6 @@ body
     margin: 0;
     margin-bottom: 10px;
     border: none;
-}
-
-.item-buttom
-{
-    color: dimgrey;
-    background-color: #141414;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 0;
 }
 
 .input-form
@@ -334,9 +326,9 @@ textarea{
     font-size: 12px;
 }
 
-.related h2
+.related p
 {
-    font-size: 20px;
+    color: #909090;
 }
 
 /****************************************************************************
@@ -456,10 +448,7 @@ hr
 
 .img-link:hover
 {
-    opacity: 0.5;
-    transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
-    opacity: 1;
+    opacity: 0.4;
 }
 
 .clear
@@ -480,4 +469,14 @@ hr
     border-style: dotted;
     margin: 0px;
     margin-bottom: 10px;
+}
+
+h1, h2, h3
+{
+    color: #d8d5cf;
+}
+
+p
+{
+    color: #909090;
 }
