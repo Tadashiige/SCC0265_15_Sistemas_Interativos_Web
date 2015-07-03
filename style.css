@@ -426,3 +426,8 @@ hr
     -webkit-transition: opacity 0.5s;
     opacity: 1;
 }
+
+.clear
+{
+    clear: both;
+}
