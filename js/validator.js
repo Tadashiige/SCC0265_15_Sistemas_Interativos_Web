@@ -68,7 +68,7 @@ function IsNotState (state) {
 function IsNotCel(number) {
 	var padrao = /^[0-9]+$/;
 	
-	return !padrao.test(number) || number.length != 10;	
+	return !padrao.test(number) || number.length != 10 || number.length != 9;	
 }
 
 function IsNotPassword (password){

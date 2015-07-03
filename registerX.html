@@ -111,7 +111,7 @@
                                             <label class="col-md-12 no-pad" for="descrip">Description:</label>
                                         </div>
                                         <div class="row no-pad">
-                                            <input class="col-md-12 no-pad input-form" id="descrip" type="text" maxlength = "300" rows = "6" cols = "50" style="resize:none;">
+                                            <textarea class="col-md-12 no-pad input-form" id="descrip" type="text" maxlength = "300" rows = "6" cols = "50" style="resize:none;"></textarea>
                                         </div>
                                         <div class="row no-pad">
                                             <label class="col-md-12 no-pad" for="firstImg">Images:</label>
@@ -147,12 +147,13 @@
 												<label class="col-md-6 no-pad" for="cat6">Sertanejo</label>
 												<input id = "cat6" class="col-md-6 no-pad category" type="checkbox" value="Sertanejo">
 											</div>
+											<span id="lastTag"></span>
 											<div class = "row no-pad">
 												<input id="newField" type="button" class="col-md-12 no-pad newData button-form" value="next">
 											</div>
 											<div class="row no-pad">
 								    			<input class="col-md-12 no-pad button-form" id="submit" type="submit" value="login" onclick="return validator();">
-                                   			</div>
+                                   			</div>                                   			
                                     </div>
                                     <div class="col-md-3"></div>
                                     
