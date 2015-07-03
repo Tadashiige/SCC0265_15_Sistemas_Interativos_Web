@@ -2,6 +2,18 @@
 *	SIGNIN - SCRIPT
 *
 */
+jQuery(function (){
+
+	$('a[href="signin.html"]').hide();
+	
+	var status = localStorage.getItem('login');
+	if(status == 'done'){
+		confirm('Usuário já está logado. Para cadastrar novo usuário favor deslogar');
+		window.open('index.html');
+		window.close();
+		
+	}
+});
 
 function signinSuccess () {
 

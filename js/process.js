@@ -4,12 +4,23 @@
 */
 
 jQuery(function (){
+	
+	$('a[href="login.html"]').attr("accesskey", "L");
+	$('a[href="signin.html"]').attr("accesskey", "S");
+	$('a[href="index.html"]').attr("accesskey", "H");
+	$('a[href="registerX.html"]').attr("accesskey", "R");
 
 	var login = localStorage.getItem("login");
 
 	if(login == "done"){
 		//alert($('a[href="login.html"]').text());
 		$('a[href="login.html"]').text("Logout");
+		$('a[href="login.html"]').attr("accesskey", "O");
+		$('a[href="signin.html"]').hide();
+		$('a[href="signin.html"]').attr("accesskey", "");
+	}else{
+		$('a[href="registerX.html"]').hide();
+		$('a[href="registerX.html"]').attr("accesskey", "");
 	}
 
 	$('a[href="login.html"]').click(function (){
@@ -18,6 +29,7 @@ jQuery(function (){
 		if(login == "done"){
 			//alert($('a[href="login.html"]').text());
 			$('a[href="login.html"]').html("Login");
+			$('a[href="login.html"]').attr("accesskey", "L");
 			localStorage.setItem("login", "logout");
 			alert("logout efetuado com sucesso.");
 		}		

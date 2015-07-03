@@ -4,6 +4,7 @@
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
@@ -13,21 +14,38 @@
 		
 		<script src="js/validator.js"></script>
 		<script src="js/login.js"></script>
-		<script src="js/process.js"></script>		
+		<script src="js/process.js"></script>
     </head>
     
     <body>
 <!--topbar---------------------------------------------------------------------------------------------------->
         <div class="container-fluid">
-            <div class="row top-bar">
-                    <div class="col-md-10 ">
-                        Discover your Musics
-                    </div>
-                    <div class="login col-md-2">
-                        <a href="login.html">Login</a>
-                        <a href="signin.html">Cadastre-se</a>
-                    </div>
-            </div>
+			<div class="row">
+			    <div class="col-md-12 no-margin no-pad">
+                    <nav class="navbar navbar-default menu no-margin" style="padding: 0 5%; margin-bottom: 0;"> <!-- menu-->
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                
+                                <a class="navbar-brand" href="">Discover your Musics</a>
+                            </div>
+                                                            
+                            <div class="collapse navbar-collapse" id="collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="login.html">login</a></li>
+                                        <li><a href="signin.html">Cadastro</a></li>
+                                </ul> 
+                            </div>
+                            
+                        </div>
+                    </nav> <!-- menu-->
+                </div>
+           </div>
 
 <!--BANNER---------------------------------------------------------------------------------------------------->
             <div id="banner" class="row">
@@ -90,7 +108,7 @@
                                     <div class="col-md-4"></div>
                                     <div class="col-md-4 form-background">
                                         <div class="row">
-                                            <legend class="legend">Login</legend>
+                                            <legend class="legend" accesskey="J">Login</legend>
                                         </div>
                                         <div class="row no-pad">
                                             <label class="col-md-12 no-pad" for="email">Email:</label>

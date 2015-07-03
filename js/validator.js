@@ -24,7 +24,6 @@ function reportError (report) {
 	
 	$(".error").remove();
 	
-	console.log(msg);
 	$("#submit").before('<div class="error">'+ msg +'</div>');
 }
 
@@ -45,12 +44,10 @@ function IsNotName (name) {
 
 function IsInvalidDate (date) {
 	var vDate = date.split("-");
-	console.log(vDate);
 	if(vDate.length == 3){
 		if(vDate[2].length == 4 && vDate[1].length == 2 && vDate[0].length == 2){
 				date = new Date (vDate[0], vDate[1]-1, vDate[2]);
 				today = new Date ();
-				console.log(today);
 				if((today - date)/1000/60/60/24/30/12 > 13)
 					return false;
 		}		
@@ -72,17 +69,11 @@ function IsNotCel(number) {
 }
 
 function IsNotPassword (password){
-	console.log(password);
 	if(password.length > 7){
-		console.log("length");
 		if(!/^[^\W]+$/.test(password)){
-			console.log("W");
 			if(!/^[^0-9]+$/.test(password)){
-				console.log("number");
 				if(!/^[^a-z]+$/.test(password)){
-					console.log("min");
 					if(!/^[^A-Z]+$/.test(password)){
-						console.log("caps");
 						return false;
 					}
 				}

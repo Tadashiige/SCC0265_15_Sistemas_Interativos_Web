@@ -3,6 +3,11 @@
 *
 */
 
+$(function(){
+	$('a[href="login.html"]').hide();
+});
+
+
 function loginSuccess () {
 	
 	$(".error").remove();
@@ -20,9 +25,6 @@ function loginSuccess () {
 
 function validator ()
 {
-	console.log("entrou");
-	
-	
 	var data = localStorage.getItem($("#email").val() + 'data');
 	var report = [];
 	if(IsNotEmail($("#email").val())){

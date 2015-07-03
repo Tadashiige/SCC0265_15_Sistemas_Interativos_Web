@@ -22,9 +22,8 @@ jQuery(function (){
 	$(".newField").click(function (){
 		var fieldClass = 'img';
 		if($(".img").eq(-1).val() != ""){
-
-			$(this).before('<input type="file" class='+fieldClass+'>');
-			$(this).before('<input type="button" class="remField"' +
+			$(this).before('<input type="file" class=\"input-form '+fieldClass+'\">');
+			$(this).before('<input type="button" class="remField button-form"' +
 				'value="remove" onclick = "removeField(this)">');		
 		}
 		
@@ -54,7 +53,7 @@ jQuery(function (){
 						return;
 			}
 
-			$('#lastTag').before('<div class="row no-pad"><label class="col-md-3 no-pad " for="">'+label+'</label><input type="text" class="col-md-9 no-pad input-form" '+fieldClass+' maxlength="50"></div>');
+			$('#lastTag').before('<div class="row no-pad"><label class="col-md-3 no-pad " for="">'+label+'</label><input type="text" class="col-md-9 no-pad input-form extra" '+fieldClass+' maxlength="50"></div>');
 			counter++;
 			if(counter == 5)
 				$(this).remove();
@@ -64,9 +63,9 @@ jQuery(function (){
 });
 
 function removeField (obj){
-
 	var fieldClass = $(obj).prev().attr('class');
-	if(fieldClass == 'img' || fieldClass == 'extra'){
+	console.log(fieldClass);
+	if(fieldClass == 'input-form img' || fieldClass == 'input-form extra'){
 		$(obj).prev().remove();	
 		$(obj).remove();
 	}
@@ -84,7 +83,7 @@ function registerSuccess () {
 
 	for(var i=0; i<$(".img").length; i++)
 		if($(".img").eq(i).val() != "")
-			data += "image\n" + $(".img").eq(i).val() + '\n';
+			data += "image\n" + "imagens_para_add\\" + $(".img").eq(i).val() + '\n';
 
 	for(var i=0; i<$(".category").length; i++)
 		if($(".category").eq(i).prop("checked"))

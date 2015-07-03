@@ -21,14 +21,14 @@ function Music () {
 
 var music = new Music ();
 
-function parseMusic (str, type) {
+function parseMusic (str) {
 	var data = [];
 	data = str.split("\n");
 	var countExtra = 0;
 	var tempMusic = new Music();
 	//console.log('depois de new\n data: ' + data + "\nlength: "+data.length);
-	if(str.match("category\n"+type+"\n") == null)
-		return null;
+	//if(str.match("category\n"+type+"\n") == null)
+	//	return null;
 	for(var i=0; i<data.length; i+=2){
 		//console.log("for do parse: "+data[i]);
 		
