@@ -456,4 +456,12 @@ hr
 .img-link:hover
 {
     opacity: 0.5;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.clear
+{
+    clear: both;
 }
